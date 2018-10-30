@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Optima.ttc">
+            <string>Optima-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Social Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SocialLoginViewController" customModule="SocialIntegration" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GyF-kj-3wZ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Z8-6Q-eIE">
+                                        <rect key="frame" x="15" y="64" width="345" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3or-nf-NI2">
+                                                <rect key="frame" x="0.0" y="0.0" width="345" height="50"/>
+                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="20"/>
+                                                <state key="normal" title="Facebook Login"/>
+                                                <connections>
+                                                    <action selector="facebookLoginButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bCH-hS-eH7"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.23137254901960785" green="0.34901960784313724" blue="0.59607843137254901" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="3or-nf-NI2" firstAttribute="top" secondItem="8Z8-6Q-eIE" secondAttribute="top" id="Q9V-yY-ic8"/>
+                                            <constraint firstAttribute="height" constant="50" id="er3-ea-gB1"/>
+                                            <constraint firstAttribute="trailing" secondItem="3or-nf-NI2" secondAttribute="trailing" id="m1y-3U-1sO"/>
+                                            <constraint firstItem="3or-nf-NI2" firstAttribute="leading" secondItem="8Z8-6Q-eIE" secondAttribute="leading" id="tko-ee-gE0"/>
+                                            <constraint firstAttribute="bottom" secondItem="3or-nf-NI2" secondAttribute="bottom" id="xd4-5e-SAO"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QFJ-mM-AX2">
+                                        <rect key="frame" x="15" y="139" width="345" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7yw-uF-TWf">
+                                                <rect key="frame" x="0.0" y="0.0" width="345" height="50"/>
+                                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="20"/>
+                                                <state key="normal" title="Google Login"/>
+                                                <connections>
+                                                    <action selector="googleLoginButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MYh-M8-Xbq"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.23137254900000001" green="0.34901960780000002" blue="0.59607843140000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="7yw-uF-TWf" secondAttribute="bottom" id="KUU-wb-2YE"/>
+                                            <constraint firstItem="7yw-uF-TWf" firstAttribute="leading" secondItem="QFJ-mM-AX2" secondAttribute="leading" id="TcO-Rx-mbz"/>
+                                            <constraint firstAttribute="trailing" secondItem="7yw-uF-TWf" secondAttribute="trailing" id="WOP-hq-k5e"/>
+                                            <constraint firstAttribute="height" constant="50" id="l49-fT-MR9"/>
+                                            <constraint firstItem="7yw-uF-TWf" firstAttribute="top" secondItem="QFJ-mM-AX2" secondAttribute="top" id="y58-fm-Lug"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="QFJ-mM-AX2" firstAttribute="top" secondItem="8Z8-6Q-eIE" secondAttribute="bottom" constant="25" id="TOY-qG-fIj"/>
+                                    <constraint firstItem="QFJ-mM-AX2" firstAttribute="leading" secondItem="GyF-kj-3wZ" secondAttribute="leading" constant="15" id="TjO-dO-pPb"/>
+                                    <constraint firstItem="8Z8-6Q-eIE" firstAttribute="top" secondItem="GyF-kj-3wZ" secondAttribute="top" constant="64" id="VHs-Z3-Avb"/>
+                                    <constraint firstAttribute="trailing" secondItem="QFJ-mM-AX2" secondAttribute="trailing" constant="15" id="cbb-vJ-Bq8"/>
+                                    <constraint firstAttribute="trailing" secondItem="8Z8-6Q-eIE" secondAttribute="trailing" constant="15" id="kQG-4U-fph"/>
+                                    <constraint firstItem="8Z8-6Q-eIE" firstAttribute="leading" secondItem="GyF-kj-3wZ" secondAttribute="leading" constant="15" id="kVN-ON-ikj"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GyF-kj-3wZ" secondAttribute="bottom" id="Enr-tB-LUa"/>
+                            <constraint firstItem="GyF-kj-3wZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="H0V-09-IFi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GyF-kj-3wZ" secondAttribute="trailing" id="Vw8-by-Txf"/>
+                            <constraint firstItem="GyF-kj-3wZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-20" id="eGQ-9c-h22"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="117.39130434782609"/>
+        </scene>
+    </scenes>
+</document>
